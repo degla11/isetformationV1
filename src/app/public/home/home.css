@@ -1,0 +1,113 @@
+/* HERO SECTION */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px;
+  background: linear-gradient(135deg, #e3f2fd, #ffffff);
+  border-radius: 10px;
+  margin: 20px;
+  animation: fadeIn 0.9s ease;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.hero h1 span {
+  color: #004aad;
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+.actions {
+  margin-top: 25px;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 12px 22px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border: none;
+}
+
+.primary-btn {
+  background: #004aad;
+  color: white;
+  margin-right: 12px;
+}
+
+.primary-btn:hover {
+  background: #003680;
+}
+
+.secondary-btn {
+  background: white;
+  border: 2px solid #004aad;
+  color: #004aad;
+}
+
+.secondary-btn:hover {
+  background: #004aad;
+  color: white;
+}
+
+.hero-image {
+  width: 330px;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* CATEGORIES */
+.categories {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.categories h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.category-list {
+  margin-top: 15px;
+}
+
+.chip {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 25px;
+  background: #e0e0e0;
+  margin: 6px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.chip:hover {
+  background: #004aad;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
